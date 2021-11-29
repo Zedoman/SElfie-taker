@@ -9,7 +9,7 @@ cap = cv2.VideoCapture(0)
 #cap = cv2.VideoCapture("filename.mp4")
 while True:
     # Read the frame
-    _, img = cap.read()
+    _, frame = cap.read()
     # Convert to grayscale
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Detect the faces
@@ -19,10 +19,10 @@ while True:
         cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
         time_stamp = datetime.datetime.now().strftime('%y-%m-%d-%H-%M-%S')
         file_name = f'self-{time_stamp}.png'
-        cv2.imwrite(file_name, img)
+        cv2.imwrite(file_name, frame)
 
     # Display
-    cv2.imshow('img', img)
+    cv2.imshow('img', frame)
     # Stop if escape key is pressed
     if cv2.waitKey(10) == ord('q'):
         break
