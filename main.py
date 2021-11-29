@@ -1,6 +1,6 @@
 import cv2
 import datetime
-cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)# we use 0 as we want our first video capture caera should be the web came of mine.
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)# we use 0 as we want our first video capture caera should be the web came of mine. #we can use othe num also if we dont want to use our webcam
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')#to detect face
 smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml') #to detect smile
 while True:# to run the prog forever
