@@ -1,4 +1,4 @@
-#Smile Detector and Photo Capture
+# Smile Detector and Photo Capture
 Overview
 The Smile Detector and Photo Capture application utilizes OpenCV and Haar cascades for real-time face and smile detection via a webcam. When a smile is detected, the program captures a photo and saves it with a timestamped filename, allowing users to create a collection of smiling photos effortlessly.
 
